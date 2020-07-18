@@ -15,12 +15,6 @@ Navigation:
 * [Quick Access to Resources](#quick-access-to-resources)
 * [Help](#help)
 
-***
-
-**Shameless Plug Warning**
-
-These resources took over one hundred hours to develop. If you find them useful, please consider connecting with me on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/) and endorsing me for R, Teaching, and Communication.
-
 ## FAQs
 
 ### The Tidy-what?
