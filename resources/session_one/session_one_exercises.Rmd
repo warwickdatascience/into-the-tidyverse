@@ -36,8 +36,8 @@ library(tidyverse)
 3. What steps would you go about to remake the following plot?
 
 ```{r echo=FALSE}
-ggplot(data = mtcars) +
-  geom_point(mapping = aes(x = disp, y = hp, colour = factor(cyl)))
+ggplot(mtcars) +
+  geom_point(aes(x = disp, y = hp, colour = factor(cyl)))
 ```
 
 ## More Aesthetics 
@@ -65,7 +65,7 @@ ggplot(data = mtcars) +
 2. Type the following code into the console. Why do you recieve an error message?
 
 ```{r eval = FALSE}
-ggplot(data = iris) +
+ggplot(iris) +
   geom_point(x = Sepal.Length, y = Petal.Length)
 ```
 
@@ -79,8 +79,8 @@ ggplot(airquality) +
 4. Why are the points in this plot not blue?
 
 ```{r message = FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = 'blue'))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = 'blue'))
 ```
 
 5. What happens when you map a variable to multiple aesthetics (say colour and size)? (It's okay to answer, "nothing", to this question but make sure you verify that first!)
@@ -95,27 +95,27 @@ ggplot(data = mpg) +
 2. What do the empty cells in a plot with `facet_grid(drv ~ cyl)` mean? How do they relate to this plot?
 
 ```{r eval = FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = drv, y = cyl))
+ggplot(mpg) +
+  geom_point(aes(x = drv, y = cyl))
 ```
 
 3. What plots does the following code make? What does the `.` do?
 
 ```{r eval = FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(drv ~ .)
 
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(. ~ cyl)
 ```
 
 4. Take the first faceted plot from the presentation:
 
 ```{r eval = FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(~ class, nrow = 2)
 ```
 
@@ -138,7 +138,7 @@ What advantages of faceting instead of the colour aesthetic? What are the disadv
 1. Run the following code. What does the extra `labs(...)` layer do?
 
 ```{r eval = FALSE}
-ggplot(data = mpg) +
+ggplot(mpg) +
   geom_point(aes(x = displ, y = hwy, colour = class)) +
   labs(x = "Engine Displacment (litres)", y = "Highway Milage (miles/gallon)",
        colour = "Car Type",
@@ -166,13 +166,10 @@ ggplot(data = mpg) +
 Begin with the following code
 
 ```{r eval FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = factor(class)))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = factor(class)))
 ```
 
-
-1. Try removing `data = ` from your `ggplot` call. Does everything still work?
-2. Try removing `mapping = ` from your `geom_point` call. Does everything still work?
-3. Try removing `x = ` and `y = ` from your `geom_point` call. Does everything still work?
-4. Try removing `colour = ` from your `geom_point` call. Does everything still work?
-5. Take the original plot and specify the aesthetics in a different order, say `y` then `colour` then `x`. Does everything still work?
+1. Try removing `x = ` and `y = ` from your `geom_point` call. Does everything still work?
+2. Try removing `colour = ` from your `geom_point` call. Does everything still work?
+3. Take the original plot and specify the aesthetics in a different order, say `y` then `colour` then `x`. Does everything still work?

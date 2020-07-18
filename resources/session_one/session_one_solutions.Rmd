@@ -17,7 +17,7 @@ library(tidyverse)
 #### Part 1
 
 ```{r}
-ggplot(data = mpg)
+ggplot(mpg)
 ```
 
 We get an empty plot with no axes, grid lines or data.
@@ -47,15 +47,15 @@ This column represents the drive-type of the car. There are 3 possibilities: f =
 #### Part 4
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = cyl, y = hwy))
+ggplot(mpg) +
+  geom_point(aes(x = cyl, y = hwy))
 ```
 
 #### Part 5
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = drv, y = class))
+ggplot(mpg) +
+  geom_point(aes(x = drv, y = class))
 ```
 
 There are several pairs of drive-type and class which relate to more than one car. Therefore the points for these cars are plotted one on top of the other so we can't see how many there are. This is called over-plotting.
@@ -83,16 +83,16 @@ The ranges are 4.3 to 7.9, 2 to 4.4, 1.0 to 6.9, and 0.1 to 2.5 respectively. On
 #### Part 3
 
 ```{r}
-ggplot(data = iris) +
-  geom_point(mapping = aes(x = Sepal.Width, y = Sepal.Length), 
+ggplot(iris) +
+  geom_point(aes(x = Sepal.Width, y = Sepal.Length), 
              col = 'darkgreen')  # I prefer dark green to the default green
 ```
 
 #### Part 4
 
 ```{r}
-ggplot(data = iris) +
-  geom_point(mapping = aes(x = Sepal.Width, y = Sepal.Length, col = Species))
+ggplot(iris) +
+  geom_point(aes(x = Sepal.Width, y = Sepal.Length, col = Species))
 ```
 
 ### Remaking Plots
@@ -126,8 +126,8 @@ Note however that it is being stored as a general numeric (continuous) value in 
 #### Part 3
 
 ```{r}
-ggplot(data = mtcars) +
-  geom_point(mapping = aes(x = disp, y = hp, col = factor(cyl)))
+ggplot(mtcars) +
+  geom_point(aes(x = disp, y = hp, col = factor(cyl)))
 ```
 
 ## More Aesthetics
@@ -137,15 +137,15 @@ ggplot(data = mtcars) +
 #### Part 1
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = cty, y = hwy, size = displ))
+ggplot(mpg) +
+  geom_point(aes(x = cty, y = hwy, size = displ))
 ```
 
 #### Part 2
 
 ```{r}
-ggplot(data = iris) +
-  geom_point(mapping = aes(x = Sepal.Length, y = Sepal.Width, alpha = Species))
+ggplot(iris) +
+  geom_point(aes(x = Sepal.Length, y = Sepal.Width, alpha = Species))
 ```
 
 Notice the warning here. Transparency is typically mapped to a continuous variable. Here, `Species` is categorical.
@@ -153,8 +153,8 @@ Notice the warning here. Transparency is typically mapped to a continuous variab
 #### Part 3
 
 ```{r}
-ggplot(data = Orange) +
-  geom_point(mapping = aes(x = age, y = circumference, shape = Tree))
+ggplot(Orange) +
+  geom_point(aes(x = age, y = circumference, shape = Tree))
 ```
 
 We get a warning here because the tree numbers are stored with an order attached to them (final circumference). This turns out to be a case where using a shape aesthetic is appropriate.
@@ -162,13 +162,13 @@ We get a warning here because the tree numbers are stored with an order attached
 #### Part 4
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = hwy, y = displ), shape = 5)
+ggplot(mpg) +
+  geom_point(aes(x = hwy, y = displ), shape = 5)
 ```
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = hwy, y = displ), shape = 17)
+ggplot(mpg) +
+  geom_point(aes(x = hwy, y = displ), shape = 17)
 ```
 
 ### Choosing Appropriate Aesthetics
@@ -192,8 +192,8 @@ Omitted to keep solutions short
 #### Part 3
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, size = class))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, size = class))
 ```
 
 This is not a good idea. There is no order for car classes so it makes no sense to map them to the size aesthetic.
@@ -213,15 +213,15 @@ This is only my opinion: (Best) colour, size, transparency (worst)
 #### Part 1
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = cty, shape = class))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = cty, shape = class))
 ```
 
 The SUVs have gone! The shape palette can only handle factors with at most 6 levels. Here `class` has 7 so the last is omitted.
 
 #### Part 2
 
-We forgot to wrap the mappings in `mapping = aes(...)`.
+We forgot to wrap the mappings in `aes(...)`.
 
 #### Part 3
 
@@ -286,10 +286,10 @@ We'll skip to part 2
 #### Part 2
 
 ```{r}
-ggplot(data = iris) +
-  geom_point(mapping = aes(x = Petal.Length, 
-                           y = Petal.Width,
-                           col = Species),
+ggplot(iris) +
+  geom_point(aes(x = Petal.Length, 
+                 y = Petal.Width,
+                 col = Species),
              show.legend = FALSE) +
   facet_wrap(~Species)  # may want to add `scales = 'free'`
 ```
@@ -297,8 +297,8 @@ ggplot(data = iris) +
 #### Part 3
 
 ```{r}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = hwy, y = cty, size = displ, col = class)) +
+ggplot(mpg) +
+  geom_point(aes(x = hwy, y = cty, size = displ, col = class)) +
   facet_grid(drv~cyl)
 ```
 
@@ -313,8 +313,8 @@ It allows you to add/change the plot title, subtitle, caption, legend labels and
 #### Part 2
 
 ```{r}
-ggplot(data = mtcars) +
-  geom_point(mapping = aes(x = disp, y = hp, col = factor(cyl))) +
+ggplot(mtcars) +
+  geom_point(aes(x = disp, y = hp, col = factor(cyl))) +
   labs(x = 'Engine Size', y = 'Gross Horsepower',
        col = 'Number of Cylinders',
        title = 'A plot of horsepower against engine size',
@@ -338,8 +338,8 @@ head(diamonds)
 #### Part 2
 
 ```{r}
-ggplot(data = diamonds) +
-  geom_point(mapping = aes(x = carat, y = price))
+ggplot(diamonds) +
+  geom_point(aes(x = carat, y = price))
 ```
 
 This plot is very difficult to read because there is significant overplotting.
@@ -349,8 +349,8 @@ This plot is very difficult to read because there is significant overplotting.
 Reducing transparency of all points might help so we can see which areas of the plot have a higher density.
 
 ```{r}
-ggplot(data = diamonds) +
-  geom_point(mapping = aes(x = carat, y = price), alpha = 0.1)
+ggplot(diamonds) +
+  geom_point(aes(x = carat, y = price), alpha = 0.1)
 ```
 
 ### Explanatory and Response Variables
@@ -367,20 +367,12 @@ No harm in having a search even if you are familiar.
 
 #### Part 1
 
-Yup.
+Aye aye.
 
 #### Part 2
 
-Sure does.
+Nope.
 
 #### Part 3
 
-Aye aye.
-
-#### Part 4
-
-Ah, no.
-
-#### Part 5
-
-Indeed.
+Sure does.

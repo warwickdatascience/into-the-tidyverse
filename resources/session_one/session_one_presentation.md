@@ -1,55 +1,29 @@
 Into the Tidyverse | Session One
 ====================================
-author: Tim Hargreaves
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgments
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
 
 Accessing Resources
 ====================================
 
 These slides, as well as other resources for the course, can be found on the corresponding GitHub repository:
 
-https://github.com/THargreaves/into-the-tidyverse
+https://github.com/warwickdatascience/into-the-tidyverse
 
 An easier way to access these is through the course website:
 
-http://www.intothetidyverse.com
+https://warwickdatascience.github.io/into-the-tidyverse
 
 Introductions
 ====================================
 type: section
-
-About Me
-====================================
-type: sub-section
-
-Who Am I?
-====================================
-left: 70%
-
-* Tim Hargreaves
-* Studying Mathematics and Statistics at the University of Warwick
-* Work heavily with data and machine-learning models
-* Currently undertaking a year-long placement at AstraZeneca
-* Previously worked with dunnhumby and Bet365
-
-***
-
-![Warwick Logo](images/company_logos/warwick_logo.png)
-
-![AstraZeneca Logo](images/company_logos/astrazeneca_logo.jpg)
-
-![dunnhumby Logo](images/company_logos/dunnhumby_logo.png)
-
-![Bet365 Logo](images/company_logos/bet365_logo.png)
-
-Contact Details
-====================================
-
-* Best way to contact me is via email: tim.hargreaves@icloud.com
-* Feel free to connect with me on LinkedIn: www.linkedin.com/in/tim-hargreaves/
-* Check out my blog for data science applications: www.ttested.com
 
 About The Course
 ====================================
@@ -349,8 +323,8 @@ Our First ggplot
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy))
 ```
 
 <img src="session_one_presentation-figure/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
@@ -360,8 +334,8 @@ Breaking the Code Down
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy))
 ```
 
 * We first start by calling the `ggplot()` function. This creates an empty graph which we can then add layers to
@@ -376,8 +350,8 @@ A General Template
 
 
 ```r
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>))
 ```
 
 * All we have to do is fill in the blanks 
@@ -470,8 +444,8 @@ Explaining Outliers (cont.)
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = class))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = class))
 ```
 
 <img src="session_one_presentation-figure/unnamed-chunk-16-1.png" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" style="display: block; margin: auto;" />
@@ -498,8 +472,8 @@ Manually Setting Aesthetics
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy), colour = 'orange')
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy), colour = 'orange')
 ```
 
 <img src="session_one_presentation-figure/unnamed-chunk-17-1.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" style="display: block; margin: auto;" />
@@ -546,8 +520,8 @@ Using facet_wrap() (cont.)
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_wrap(~ class, nrow = 2)
 ```
 
@@ -562,8 +536,8 @@ Using facet_wrap() (cont.)
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = class), show.legend = FALSE) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = class), show.legend = FALSE) +
   facet_wrap(~ class, nrow = 2)
 ```
 
@@ -582,8 +556,8 @@ Using facet_grid() (cont.)
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(drv ~ cyl)
 ```
 
@@ -596,8 +570,8 @@ Using facet_grid() (cont.)
 
 
 ```r
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(. ~ cyl)
 ```
 
@@ -613,7 +587,7 @@ Course Resources
 * This course is not designed to be learnt by watching, but **doing**
 * Mistakes are expected, and it will take time to move these techniques into your memory
 * These slides will available to review at any time
-* I am contactable via email: `tim.hargreaves@icloud.com`
+* I am contactable on LinkedIn: https://www.linkedin.com/in/tim-hargreaves/
 * Feel free to work together and ask lots of questions
 
 Online Resources

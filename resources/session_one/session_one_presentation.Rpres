@@ -1,55 +1,29 @@
 Into the Tidyverse | Session One
 ====================================
-author: Tim Hargreaves
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgments
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
 
 Accessing Resources
 ====================================
 
 These slides, as well as other resources for the course, can be found on the corresponding GitHub repository:
 
-https://github.com/THargreaves/into-the-tidyverse
+https://github.com/warwickdatascience/into-the-tidyverse
 
 An easier way to access these is through the course website:
 
-http://www.intothetidyverse.com
+https://warwickdatascience.github.io/into-the-tidyverse
 
 Introductions
 ====================================
 type: section
-
-About Me
-====================================
-type: sub-section
-
-Who Am I?
-====================================
-left: 70%
-
-* Tim Hargreaves
-* Studying Mathematics and Statistics at the University of Warwick
-* Work heavily with data and machine-learning models
-* Currently undertaking a year-long placement at AstraZeneca
-* Previously worked with dunnhumby and Bet365
-
-***
-
-![Warwick Logo](images/company_logos/warwick_logo.png)
-
-![AstraZeneca Logo](images/company_logos/astrazeneca_logo.jpg)
-
-![dunnhumby Logo](images/company_logos/dunnhumby_logo.png)
-
-![Bet365 Logo](images/company_logos/bet365_logo.png)
-
-Contact Details
-====================================
-
-* Best way to contact me is via email: tim.hargreaves@icloud.com
-* Feel free to connect with me on LinkedIn: www.linkedin.com/in/tim-hargreaves/
-* Check out my blog for data science applications: www.ttested.com
 
 About The Course
 ====================================
@@ -323,16 +297,16 @@ Our First ggplot
 * We can plot the desired graph using the following code
 
 ```{r fig.align='center', fig.width = 12}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy))
 ```
 
 Breaking the Code Down
 ====================================
 
 ```{r eval=FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy))
 ```
 
 * We first start by calling the `ggplot()` function. This creates an empty graph which we can then add layers to
@@ -346,8 +320,8 @@ A General Template
 * In general, our code will look something like the following
 
 ```{r eval=FALSE}
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>))
 ```
 
 * All we have to do is fill in the blanks 
@@ -355,8 +329,8 @@ ggplot(data = <DATA>) +
 * For example, we may want to ask how highway (`hwy`) and city (`cty`) mileage are related
 
 ```{r include=FALSE}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = hwy, y = cty))
+ggplot(mpg) +
+  geom_point(aes(x = hwy, y = cty))
 ```
 
 Aside: Working With Data Frames
@@ -435,8 +409,8 @@ Explaining Outliers (cont.)
 * To add colour to our plot, we simply add a new mapping to the code we had before
 
 ```{r fig.align='center', fig.width = 12}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = class))
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = class))
 ```
 
 * It appears that the anomalous points correspond to 2-seater sports cars
@@ -460,8 +434,8 @@ Manually Setting Aesthetics
 * We simply perform the mapping outside of the `aes()` function and assign the aesthetic a value rather than a variable
 
 ```{r fig.align='center', fig.width = 12, fig.height = 6}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy), colour = 'orange')
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy), colour = 'orange')
 ```
 
 Manually Setting Aesthetics (cont.)
@@ -505,8 +479,8 @@ Using facet_wrap() (cont.)
 ====================================
 
 ```{r fig.align='center', fig.width = 12, fig.height = 6}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_wrap(~ class, nrow = 2)
 ```
 
@@ -518,8 +492,8 @@ Using facet_wrap() (cont.)
 * In this case it is often worth specifying `show.legend = FALSE` in the geometry layer
 
 ```{r fig.align='center', fig.width = 12, fig.height = 6}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, colour = class), show.legend = FALSE) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy, colour = class), show.legend = FALSE) +
   facet_wrap(~ class, nrow = 2)
 ```
 
@@ -535,8 +509,8 @@ Using facet_grid() (cont.)
 ====================================
 
 ```{r fig.align='center', fig.width = 12, fig.height = 6}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(drv ~ cyl)
 ```
 
@@ -546,8 +520,8 @@ Using facet_grid() (cont.)
 * If you only wish to use `facet_grid()` with one variable, you can use a `.` instead of a variable name on one side of the formula
 
 ```{r fig.align='center', fig.width = 12, fig.height = 4}
-ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy)) +
+ggplot(mpg) +
+  geom_point(aes(x = displ, y = hwy)) +
   facet_grid(. ~ cyl)
 ```
 
@@ -561,7 +535,7 @@ Course Resources
 * This course is not designed to be learnt by watching, but **doing**
 * Mistakes are expected, and it will take time to move these techniques into your memory
 * These slides will available to review at any time
-* I am contactable via email: `tim.hargreaves@icloud.com`
+* I am contactable on LinkedIn: https://www.linkedin.com/in/tim-hargreaves/
 * Feel free to work together and ask lots of questions
 
 Online Resources
