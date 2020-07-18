@@ -13,7 +13,10 @@ Navigation:
 * [About the Course](#about-the-course)
 * [Getting Started](#about-the-course)
 * [Quick Access to Resources](#quick-access-to-resources)
+* [Session Summaries](#session-summaries)
+* [Additional Content](#additional-content)
 * [Help](#help)
+* [Contact](#contact)
 
 ## FAQs
 
@@ -25,21 +28,17 @@ The tidyverse is a collection of tools for the programming language R used for w
 
 Nothing but a passion to learn!
 
-### How do I report a mistake?
-
-Spotted a mistake, dead link, or have suggestions for improvements? Report these [here](https://github.com/THargreaves/into-the-tidyverse/issues/new)
-
 ## About This Repository
 
-This repository contains slides, exercise sheets, and solution sheets for my course, 'Into the Tidyverse'. This was first taught at Alsager Sixth Form during the Autumn term of 2019 and has since been adapted for use at the AstraZeneca Code Club and Data Science Academy. The repository is designed to be completely self-contained, with any images and data used in the presentations or exercises included in each session's data folder. You can use the navigation links below to find relevant resources and below that, a few words of guidance can be found.
+This repository contains slides, exercise sheets, and solution sheets for WDSS's course, 'Into the Tidyverse'. The material is aimed at anyone new to R or even programming in general. The repository is designed to be completely self-contained, with any images and data used in the presentations or exercises included in each session's data folder. You can use the navigation links below to find relevant resources and below that, a few words of guidance can be found.
 
 ## About the Course
 
 'Into the Tidyverse' does exactly what it says on the tin. This is an intensive 5-week course which aims to take someone from a coding-zero to tidyverse-hero in as little time as possible. Each session is composed of a rapid-fire presentation introducing different elements of the tidyverse as well as an exercise sheet to help consolidate the ideas presented in the slideshow.
 
-For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/THargreaves/into-the-tidyverse/raw/master/Course%20Summary.pptx).
+For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/warwickdatascience/into-the-tidyverse/raw/master/Course%20Summary.pptx).
 
-The contents of presentation are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so I don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
+The contents of the presentations are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so we don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
 
 My main word of guidance is 'practice'. Practice, practice, practice. You can read through these slides as many times as your heart disires and it is likely most of it will soon be forgotten. Instead, scan through the presentations so you know what tools are available and where to find them and then get straight onto the exercise sheets. If you reach a hurdle, have a look back through the slides. Wash, rinse, repeat and soon you'll by a tidyverse star!
 
@@ -54,53 +53,62 @@ I would advise the former if you have install rights on your computer. It is sli
 
 ## Quick Access to Resources
 
-Below you can find links to the content for each session. Note, that when attempting to download data for a given session, your browser may attempt to open CSVs directly. If this is the case, either right-click and select 'save as' or use `ctrl-S` to save a local copy.
+Below you can find links to the content for each session. Our material is all ready to go and we will add links for each session at the beginning of the week.
+
+Note, that when attempting to download data for a given session, your browser may attempt to open CSVs directly. If this is the case, either right-click and select 'save as' or use `ctrl-S` to save a local copy.
 
 ### Session One
 
-* [Presentation](https://thargreaves.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
+* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
 
-* [Exercises](https://thargreaves.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
+* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
 
-* [Solutions](https://thargreaves.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
+* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
 
-### Session Two
+## Session Summaries
 
-* [Presentation](https://thargreaves.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
+### Session 1
 
-* [Exercises](https://thargreaves.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
+* Understanding R, RStudio, and the tidyverse
+* Basic scatter plots
+* Exploring datasets
+* Using aesthetics
+* Faceted plots
 
-* [Data](https://github.com/THargreaves/into-the-tidyverse/tree/master/resources/session_two/data)
+### Session 2
 
-* [Solutions](https://thargreaves.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
+* Using R as a calculator
+* Objects and functions
+* Reading CSV files
+* Reading Excel, SAS, SPSS, and STATA files
+* Creating line plots
 
-### Session Three
+### Session 3
 
-* [Presentation](https://thargreaves.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
+* Using R for statistics
+* Comparisons and Boolean operators
+* Manipulating datasets
+* Grouped dataframes
+* Piping
 
-* [Exercises](https://thargreaves.github.io/into-the-tidyverse/resources/session_three/session_three_exercises.nb.html#/)
+### Session 4
 
-* [Data](https://github.com/THargreaves/into-the-tidyverse/tree/master/resources/session_three/data)
+* Tidy data
+* Pivoting data
+* Uniting and separating columns
+* Relational data
 
-* [Solutions](https://thargreaves.github.io/into-the-tidyverse/resources/session_three/session_three_solutions.nb.html#/)
+### Session 5
 
-### Session Four
+* Saving plots and dataframes
+* Statistical transformations
+* Positional adjustments
+* Coordinate systems
+* Theming
 
-* [Presentation](https://thargreaves.github.io/into-the-tidyverse/resources/session_four/session_four_presentation.html)
+## Additional Content
 
-* [Exercises](https://thargreaves.github.io/into-the-tidyverse/resources/session_four/session_four_exercises.nb.html#/)
-
-* [Data](https://github.com/THargreaves/into-the-tidyverse/tree/master/resources/session_four/data)
-
-* [Solutions](https://thargreaves.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
-
-### Session Five
-
-* [Presentation](https://thargreaves.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
-
-* [Exercises](https://thargreaves.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
-
-* [Solutions](https://thargreaves.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
+On top of the base content shown above, the partipants of our fast track course (R1) will have the opportunity to learn some additional content. This will take the form of additional content added on the fly or specific requests from students. No notes will be made for this additional teaching though recordings will be made available at the end of the course containing these sections.
 
 ## Help
 
@@ -114,5 +122,20 @@ If you are use RStudio cloud, you will need to open the `Files` panel and select
 
 ### General Help
 
-See the end of the session one presentation for ways to find general help. Also feel free to contact me by email or reach out to me on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/).
+If you are taking this course through WDSS, your first port of call for any issues is your mentor. They will be able to handle the majority of issues and can elevate any particulary troublesome or important ones.
+
+If you are self-teaching, feel free to reach out to Tim Hargreaves (the content author) on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/).
+
+## Contact
+
+This course was written and initially taught by [Tim Hargreaves](https://www.linkedin.com/in/tim-hargreaves/). 
+
+For general enquires, reach out to hello@warwickdatascience.com.
+
+### Socials
+
+* [Facebook](https://rebrand.ly/wdss-facebook)
+* [LinkedIn](https://rebrand.ly/wdss-linkedin)
+* [Instagram](https://rebrand.ly/wdss-instagram)
+* [YouTube](https://rebrand.ly/wdss-youtube)
 
