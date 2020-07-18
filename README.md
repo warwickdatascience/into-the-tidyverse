@@ -1,4 +1,10 @@
-_This repository is best accessed through its website, [www.intothetidyverse.com](https://www.intothetidyverse.com)._
+# Into the Tidyverse
+
+[![Powered by DigitalOcean](DO_badge.png)](https://www.digitalocean.com/)
+
+_Session material and solutions for the Into the Tidyverse course taught by WDSS_
+
+Spotted a mistake, dead link, or have suggestions for improvements? Report these [here](https://github.com/warwickdatascience/into-the-tidyverse/issues/new)
 
 Navigation:
 
