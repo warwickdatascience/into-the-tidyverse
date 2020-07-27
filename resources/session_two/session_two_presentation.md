@@ -1,10 +1,14 @@
 Into the Tidyverse | Session Two
 ====================================
-author: Tim Hargreaves
-date: 2019-10-03
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgments
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
 
 
 
@@ -325,7 +329,7 @@ people_df
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# ... with 1,182 more rows
+# … with 1,182 more rows
 ```
 
 Aside: Tibbles
@@ -555,12 +559,12 @@ read_delim('path/to/file.txt', '|')
 
 * These all accept the same additional arguments as `read_csv()`
 
-Fixed-width files
+Fixed-width files (Omitted)
 ====================================
 left: 50%
 
 * Some flat data files do not have separators but instead have the same width for each observation of a given field
-* These are usually separated by spaces but other characters can be used
+* These are usually separated by spaces but other characters can be used 
 
 ***
 
@@ -615,7 +619,7 @@ people
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# ... with 1,182 more rows
+# … with 1,182 more rows
 ```
 
 * These can be read in alternative ways using `fwf_positions()`, `fwf_cols()`, and `fwf_empty()`
@@ -646,6 +650,17 @@ cols(
   race = col_character()
 )
 ```
+
+Importing Foreign Data
+====================================
+left: 50%
+
+* Although it is best to import data directly using code, RStudio does offer a tool for importing common data files
+* This is useful whilst you are still learning R but is not a long term solution as it lacks reproducibility
+
+***
+
+![Importing foreign datasets](images/import_dataset.png)
 
 Column Types
 ====================================
