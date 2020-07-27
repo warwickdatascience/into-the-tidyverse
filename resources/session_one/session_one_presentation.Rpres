@@ -100,11 +100,10 @@ Why Bother Learning the Tidyverse?
 Course Agenda
 ====================================
 
-* The course will be ran weekly for weeks
+* The course will be ran weekly for five weeks
 * An optional session will be ran at the end to facilitate a DataViz Battle
-* Each week will have two sessions
-  * The first will introduce new material and work through some examples
-  * The second will allow time to apply the new techniques to a problem sheet
+* Each session will introduce new material and work through some examples
+* A homework sheet will then be distributed to apply the new techniques
   
 The Tidy-what?
 ====================================
@@ -310,7 +309,7 @@ ggplot(mpg) +
 ```
 
 * We first start by calling the `ggplot()` function. This creates an empty graph which we can then add layers to
-* We pass in the `mpg` data frame as the `data` argument so that `ggplot2` knows we will be using that for our plot
+* We pass in the `mpg` data frame so that `ggplot2` knows we will be using that for our plot
 * We then use the `+` symbol to add a new layer. Specifically we add a point *geometry* using the `geom_point()` function
 * We need to tell `ggplot2` which variables in the data frame to map to the various *aesthetics* of the plot. In this case, we just specify the variables mapping to the x and y coordinates
 
