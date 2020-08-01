@@ -24,10 +24,9 @@ Basic Scatter Plots
 * The basic structure of the code needed to generate a scatter plot is
 
 ```{r eval=FALSE}
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(x = <VAR1>, 
-                                y = <VAR2>, 
-                                <FURTHER MAPPINGS>))
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(x = <VAR1>, y = <VAR2>, 
+                      <FURTHER MAPPINGS>))
 ```
 
 * Further mappings include `col`/`colour`/`color`, `size`, `alpha`, `shape`
@@ -39,14 +38,14 @@ Faceting
 * We can facet a plot in one of two ways
 
 ```{r eval=FALSE}
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>)) +
-  facet_wrap(~ <VAR>)
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>)) +
+  facet_wrap(~<VAR>)
 ```
 
 ```{r eval=FALSE}
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>)) +
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>)) +
   facet_grid(<ROW_VAR> ~ <COL_VAR>)
 ```
 
