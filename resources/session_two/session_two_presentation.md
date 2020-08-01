@@ -23,10 +23,9 @@ Basic Scatter Plots
 
 
 ```r
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(x = <VAR1>, 
-                                y = <VAR2>, 
-                                <FURTHER MAPPINGS>))
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(x = <VAR1>, y = <VAR2>, 
+                      <FURTHER MAPPINGS>))
 ```
 
 * Further mappings include `col`/`colour`/`color`, `size`, `alpha`, `shape`
@@ -39,15 +38,15 @@ Faceting
 
 
 ```r
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>)) +
-  facet_wrap(~ <VAR>)
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>)) +
+  facet_wrap(~<VAR>)
 ```
 
 
 ```r
-ggplot(data = <DATA>) +
-  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>)) +
+ggplot(<DATA>) +
+  <GEOM_FUNCTION>(aes(<MAPPINGS>)) +
   facet_grid(<ROW_VAR> ~ <COL_VAR>)
 ```
 
@@ -329,7 +328,7 @@ people_df
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# … with 1,182 more rows
+# ... with 1,182 more rows
 ```
 
 Aside: Tibbles
@@ -619,7 +618,7 @@ people
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# … with 1,182 more rows
+# ... with 1,182 more rows
 ```
 
 * These can be read in alternative ways using `fwf_positions()`, `fwf_cols()`, and `fwf_empty()`
