@@ -1,10 +1,14 @@
 Into the Tidyverse | Session Three
 ====================================
-author: Tim Hargreaves
-date: 2019-10-17
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgements
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
 
 
 
@@ -538,7 +542,7 @@ left: 70%
 
 * `dplyr` is the third tidyverse package that we will be looking at
 *  It has five main features, referred to as the `dplyr` _verbs_
-*  These allow you to filter a dataste or transform it by creating new variables/summaries
+*  These allow you to filter a dataset or transform it by creating new variables/summaries
 *  You can also use these to reorder your observations to make a dataset easier to work with
 
 ***
