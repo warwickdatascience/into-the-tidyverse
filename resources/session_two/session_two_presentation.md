@@ -5,7 +5,7 @@ width: 1440
 height: 900
 css: presentation.css
 
-Acknowledgments
+Acknowledgements
 ====================================
 
 ![DigitalOcean Logo](images/DO_badge.png)
