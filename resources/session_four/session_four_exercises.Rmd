@@ -17,8 +17,7 @@ Note that the sample tables used in the presentation can be accessed once the ti
 #### Understanding Tidy-ness
 
 1. (**Taken form R4DS**) Using prose, describe to your partner how the variables and observations are organised in each of the sample tables
-2. Discuss with your partner whether the weather dataset tidy data?
-3. Which of the following representations of the `ChickWeight` dataset is tidy? Why are the others not?
+2. Which of the following representations of the `ChickWeight` dataset is tidy? Why are the others not?
 
 ```{r echo=FALSE}
 ChickWeight %>%
@@ -41,7 +40,7 @@ ChickWeight %>%
   head()
 ```
 
-4. You want to create a line plot showing how mobile phone usage has changed over time in the seven main geographic regions. Which of the following tables is this easiest to do with?
+3. You want to create a line plot showing how mobile phone usage has changed over time in the seven main geographic regions. Which of the following tables is this easiest to do with?
 
 ```{r echo=FALSE}
 WorldPhones %>% 
@@ -59,7 +58,7 @@ WorldPhones %>%
   head(n = 10)
 ```
 
-5. Which of the above forms is best if you just wish to view the raw data?
+4. Which of the above forms is best if you just wish to view the raw data?
 
 ### Spreading and Gathering
 
@@ -184,14 +183,6 @@ sales %>%
     geom_point() +
     geom_smooth(method = 'lm')
 ```
-
-
-### The Weather Dataset
-
-1. Cleaned CSVs of the Exexcel large dataset can now be found [here](https://github.com/THargreaves/edexcel-large-dataset-extractor)
-2. Import two locations for the same year into R, select a column of interest in both of them and join the datasets
-3. Produce a graphic showing how the variable in both locations differ
-4. Attempt to replicate the workflow at the end of this week's presentation
 
 ## Going Beyond
 

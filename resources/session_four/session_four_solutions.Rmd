@@ -18,7 +18,7 @@ library(tidyverse)
 
 In the first table, each row represents a country/year combination. The columns `cases` and `population` contains the values of those variables.
 
-In the second table, each row corresponds to a country/year/variable combination. The column count contains the values of both the variabels `cases` and `population` depending on which row we look at.
+In the second table, each row corresponds to a country/year/variable combination. The column count contains the values of both the variables `cases` and `population` depending on which row we look at.
 
 In the third table, each row represents a country/year combination as in the first, but now the `rate` column contains values of both the variables `cases` and `population`.
 
@@ -26,21 +26,17 @@ The last table is split into two. The first relates to the number of cases and t
 
 #### Part 2
 
-The weather dataset is indeed tidy. Each row corresponds to a specific day and all of the columns represent variables that can be measured for each observation. No cell shares more than one value. 
-
-#### Part 3
-
 THe first form is not tidy. Here the columns `Day 0`, `Day 2`, etc. are values of the variable `Time`.
 
 The second table is indeed tidy. Each column represents a variable and our data is in one table.
 
 The last table is not tidy since there are cells containing more than one value.
 
-#### Part 4
+#### Part 3
 
 The latter table is much easier to work with. Since the variable `Country` has its own column rather than having its values spread out across multiple columns, we can easily map the colour aesthetic to this variable.
 
-#### Part 5
+#### Part 4
 
 The first table is much better if we only plan to look at the data. It is much easier to find the mobile phone usage of a particular region in a particular year in this format and we can also see how different regions compare in a given year without having to filter the dataset first unlike with the latter form.
 
@@ -151,11 +147,11 @@ The `remove` argument controls whether or not the columns used as input to `unit
 
 `separate()` splits a column into multiple columns by separator, if the `sep` argument is a character vector, or by character positions, if `sep` is numeric.
 
-`extract()` on the otherhand uses a regular expression to specify groups in a character vector use these as the values of the new columns. This is certainly more flexible that `separate()` and allows you to ignore parts of the original strings when extracting.
+`extract()` on the other hand uses a regular expression to specify groups in a character vector use these as the values of the new columns. This is certainly more flexible that `separate()` and allows you to ignore parts of the original strings when extracting.
 
 Both `separate()` and `extract()` convert a single column to many columns whereas `unite` converts many columns into one with a choice of separator to include between the column values.
 
-With `extract()` and `separate()` only one column can be choses, but there are many choices regarding how to split this column into many. With `unite()` however, there are many choices of which columns to combine, but only a single choice as to how to combine their contents.
+With `extract()` and `separate()` only one column can be chosen, but there are many choices regarding how to split this column into many. With `unite()` however, there are many choices of which columns to combine, but only a single choice as to how to combine their contents.
 
 ### A Practical Example
 
@@ -245,56 +241,6 @@ flights %>%
 ##### Part 7
 
 A right join is appropriate. We want observations for every current employee regardless of whether they have made any sales (as we later replace no sales with a total of zero). We also don't want any ex-employees to be included even if they appear in the sales dataset.
-
-#### The Weather Dataset
-
-##### Part 1
-
-Great!
-
-##### Part 2
-
-```{r}
-heathrow <- read_csv(paste0("https://raw.githubusercontent.com/THargreaves/",
-                            "edexcel-large-dataset-extractor/master/output/",
-                            "heathrow_2015.csv"), col_types = cols())
-leuchars <- read_csv(paste0("https://raw.githubusercontent.com/THargreaves/",
-                            "edexcel-large-dataset-extractor/master/output/",
-                            "leuchars_2015.csv"), col_types = cols())
-```
-
-We'll only keep columns of interest.
-
-```{r}
-heathrow <- heathrow %>%
-  select(date, mean_temperature)
-leuchars <- leuchars %>%
-  select(date, mean_temperature)
-```
-
-And we join. Any join will do since the data is complete.
-
-```{r}
-weather <- heathrow %>%
-  inner_join(leuchars, by = "date", suffix = c('.heathrow', '.leuchars'))
-```
-
-We manually specify the suffixes for duplicate column names using `suffix = ...`.
-
-##### Part 3
-
-I will ask how well the temperatures correlate.
-
-```{r}
-ggplot(weather, aes(x = mean_temperature.heathrow, 
-                    y = mean_temperature.leuchars)) +
-  geom_point(col = 'orange') +
-  geom_smooth(method = 'lm', col = 'grey30', se = FALSE) + 
-  theme_minimal() +
-  labs(x = "Mean Temperature in Heathrow (°C)",
-       y = "Mean Temperature in Leuchars (°C)",
-       title = "Correlation between temperatures in Heathrow and Leuchars")
-```
 
 ## Going Beyond
 
