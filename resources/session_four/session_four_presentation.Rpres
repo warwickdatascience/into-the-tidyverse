@@ -5,6 +5,15 @@ width: 1440
 height: 900
 css: presentation.css
 
+Acknowledgements
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(dpi = 70, dev.args = list(type = "cairo"))
+```
+
 Recap
 ====================================
 type: section

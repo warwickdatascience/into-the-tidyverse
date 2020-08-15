@@ -5,6 +5,13 @@ width: 1440
 height: 900
 css: presentation.css
 
+Acknowledgements
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
+
+
+
 Recap
 ====================================
 type: section
@@ -759,4 +766,4 @@ Aside: Tidy Data in Practice
 
 * How would we create this graph?
 
-![plot of chunk unnamed-chunk-27](session_four_presentation-figure/unnamed-chunk-27-1.png)
+![plot of chunk unnamed-chunk-28](session_four_presentation-figure/unnamed-chunk-28-1.png)
