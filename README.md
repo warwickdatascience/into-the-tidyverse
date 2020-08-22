@@ -95,6 +95,14 @@ Note, that when attempting to download data for a given session, your browser ma
 
 * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
 
+### Session Five
+
+* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
+
+* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
+
+* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
+
 
 ## Session Summaries
 

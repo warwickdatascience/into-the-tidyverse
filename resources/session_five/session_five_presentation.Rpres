@@ -1,9 +1,18 @@
 Into the Tidyverse | Session Five
 ====================================
-author: Tim Hargreaves
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgements
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(dpi = 70, dev.args = list(type = "cairo"))
+```
 
 Recap
 ====================================
@@ -449,8 +458,8 @@ Congratulations
 
 * Well done for making it to the end of the structured portion of this course
 * It is now time to apply the skills you developed to produce a data visualisation of your choosing
-* We will not be running a session next week so you have time to work on this
-* We will then reconvene in two weeks time to showcase results
+* We will reconvene in two weeks' time to showcase results
+* Details on course completion certificates will be given then
 
 Competition Rules
 ====================================
@@ -458,27 +467,25 @@ Competition Rules
 * Each student is allowed to enter as many visualisations as they would like
 * You are welcome to work together and help each other with problems but should not copy code directly
 * The visualisation you produce can be _inspired_ by existing visualisations/projects but direct plagiarism will not be tolerated (it is safest to comment your code with where you got certain ideas/code from)
-* You are welcome to ask me for any support during the competition. I will be able to guide you to helpful resources and/or fix errors in your code
+* You are encouraged to ask your mentors for any support during the competition. They will be able to guide you to helpful resources and/or fix errors in your code
 
 Prizes
 ====================================
 
-* Anyone who participates in the competition will be rewarded with a tidyverse laptop sticker
-* There will be four main prizes each earning a box of chocolates:
+* There will be three main prizes each earning a box of chocolates and a flash drive:
   * Most aesthetically-pleasing visualisation
   * Visualisation showcasing the best techniques that go above and beyond this course
   * Best story-telling/most informative
-  * Novel visualisation of the weather dataset
-* Each visualisation entered can only win one of these prizes but if you decide to enter all four categories with four different visualisations, you could potentially win them all
+* Each visualisation entered can only win one of these prizes but if you decide to enter all three categories with three different visualisations, you could potentially win them all
 
 Submitting Visualisations
 ====================================
 
-* To submit a visualisation, please email a compressed archive (e.g. ZIP) to `tim.hargreaves@icloud.com`
+* To submit a visualisation, please send a compressed archive (e.g. ZIP) to your mentor
 * This should contain the output of your visualisation (any file format welcome), the R Script that produced your visualisation, and any inputs your script requires (e.g. data sets)
-* This must be sent to be by 1pm on the 27th November to be considered for the main prizes
-* I will consider visualisations sent to me at any point for the participation prizes
-* By submitting your visualisation, you must agree to have its source code and output hosted on this course's GitHub repository (I am happy to help you clean up your code/visualisation before it is shared)
+* This must be sent by midnight 4th September to be considered for the main prizes
+* Submissions after this time will still be accepted and we may publish any great visualisations on our socials
+* Selected submitted visualisations will be included in this course's GitHub repository
 
 Resources
 ====================================

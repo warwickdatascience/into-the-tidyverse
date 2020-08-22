@@ -1,9 +1,16 @@
 Into the Tidyverse | Session Five
 ====================================
-author: Tim Hargreaves
+author: Warwick Data Science Society
 width: 1440
 height: 900
 css: presentation.css
+
+Acknowledgements
+====================================
+
+![DigitalOcean Logo](images/DO_badge.png)
+
+
 
 Recap
 ====================================
@@ -152,7 +159,7 @@ ggplot(data = diamonds) +
 A Motivating Example (cont.)
 ====================================
 
-![plot of chunk unnamed-chunk-4](session_five_presentation-figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-5](session_five_presentation-figure/unnamed-chunk-5-1.png)
 
 * On the x-axis we have a variable we recognise, `cut`, but on the y-axis we have a variable, `count`, that didn't appear anywhere in the original dataset
 * Where did this come from?
@@ -202,7 +209,7 @@ ggplot(data = salaries) +
 Overriding Stats (cont.)
 ====================================
 
-![plot of chunk unnamed-chunk-6](session_five_presentation-figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-7](session_five_presentation-figure/unnamed-chunk-7-1.png)
 
 * Note that we could have instead used `geom_col()`
 * This behaves just like `geom_bar()` but has a default stat of `stat_identity`
@@ -219,7 +226,7 @@ ggplot(data = diamonds) +
   geom_bar(mapping = aes(x = cut, y = ..prop.., group = -1))
 ```
 
-![plot of chunk unnamed-chunk-7](session_five_presentation-figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-8](session_five_presentation-figure/unnamed-chunk-8-1.png)
 
 * As you can see, we access computed variables using the notation `..var_name..`
 
@@ -250,245 +257,25 @@ ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, colour = cut))
 ggplot(data = diamonds) + geom_bar(mapping = aes(x = cut, fill = cut))
 ```
 
-![plot of chunk unnamed-chunk-9](session_five_presentation-figure/unnamed-chunk-9-1.png)
-
-Stacked Bars
-====================================
-
-* What happens when we map the fill aesthetic to one other than that being using for `x`?
-* We end up with a stacked bar chart!
 
 
-```r
-ggplot(data = diamonds) +
-  geom_bar(mapping = aes(x = cut, fill = clarity))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
-
-![plot of chunk unnamed-chunk-10](session_five_presentation-figure/unnamed-chunk-10-1.png)
-
-* Note: The same also happens if we use the colour aesthetic though the result is less visually-pleasing
-
-Setting Position
-====================================
-
-* This is because the default value of the `position` parameter for `geom_bar` is "stack"
-* If we didn't like this behaviour we have "identity", "dodge", and "fill" to choose from
-* "identity" will place each object exactly where it would normally fall in the graph. This will cause bars to overlap and so this should only be used with `alpha` set to a low value or with `fill = NA` and an outline colour
-* "dodge" places overlapping objects side-by-side. This makes it easy to compare individual observations but obscures the group behaviour
-* "fill" works like "stack" but makes each set of stacked bars the same height. This makes it easier to compare the breakdown of each group
-* You may wish to experiment with these options by adjusting the code on the last slide
-
-Setting Position (cont.)
-====================================
-
-* Here is one example (though not a pretty one) using `position = "identity"`
-
-
-```r
-ggplot(data = diamonds) +
-  geom_bar(mapping = aes(x = cut, colour = clarity), fill = NA, position = "identity")
+Error in loadNamespace(name) : there is no package called 'gridExtra'
 ```
-
-![plot of chunk unnamed-chunk-11](session_five_presentation-figure/unnamed-chunk-11-1.png)
-
-Jittering
-====================================
-
-* Scatterplots also have their own position parameter (which defaults to "identity")
-* Another option is "jitter"
-* This is used to reduce over-plotting by adding a slight bit of random noise to the position of each point
-* This is especially useful when you are dealing with rounded data or discrete variables
-* Alternatively you can use `geom_jitter()` which is the same as `geom_point()` but has a default position argument of "jitter"
-
-Coordinate Systems
-====================================
-type: sub-section
-
-Switching Axes
-====================================
-
-* You can switch the x and y axes of a plot by adding a call to `coord_flip()` as a new layer
-* This is useful when you have long labels on the x-axis that would otherwise overlap
-
-
-```r
-ggplot(mpg, aes(x = class, y = hwy)) +
-  geom_boxplot() +
-  coord_flip()
-```
-
-![plot of chunk unnamed-chunk-12](session_five_presentation-figure/unnamed-chunk-12-1.png)
-
-Fixing Axis Ratio
-====================================
-
-* By default, ggplot will scale a graph so it fills your plotting window
-* You can override this behaviour and force a specific ratio using `coord_fixed(ratio = ...)`
-
-
-```r
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_hex() +
-  coord_fixed(ratio = 1)
-```
-
-![plot of chunk unnamed-chunk-13](session_five_presentation-figure/unnamed-chunk-13-1.png)
-
-Polar Coordinates
-====================================
-
-* You can use `coord_polar()` to treat your x and y values as r and theta in polar coordinates
-
-
-```r
-ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point() +
-  coord_polar()
-```
-
-![plot of chunk unnamed-chunk-14](session_five_presentation-figure/unnamed-chunk-14-1.png)
-
-* It seems like there is very little point to this but this is actually how you would go about creating a pie, Coxcomb or radar plot
-
-Pie Charts
-====================================
-
-
-```r
-ggplot(mpg, aes(x = -1, fill = class)) +
-  geom_bar(position = 'fill') +
-  coord_polar("y") +
-  labs(x = "")
-```
-
-![plot of chunk unnamed-chunk-15](session_five_presentation-figure/unnamed-chunk-15-1.png)
-
-* The other visual artifacts can be removed with a little work
-
-Themes
-====================================
-type: sub-section
-
-Complete Themes
-====================================
-
-* ggplot comes with several complete themes which control all non-data display
-* The default theme is `theme_grey()` - which ironically is one of the ugliest
-* You can find a list of all themes by looking at the help page for any theme (e.g. `?theme_grey`)
-* Some good-looking themes to try out include `theme_classic()`, `theme_bw()`, and `theme_minimal()`
-* You can change the theme of a plot by adding a theme function as a new layer
-
-
-```r
-ggplot(diamonds, aes(x = cut, y = price, fill = cut)) +
-  geom_violin(alpha = 0.5, show.legend = FALSE) +
-  coord_flip() +
-  theme_minimal()
-```
-
-Default Themes
-====================================
-
-* The default theme for each plot you create can be found by calling `theme_get()`
-* At the start of a new R session, this will always be `theme_grey()`
-* You can override this default by using, say, `theme_set(theme_minimal())`
-* `theme_set()` returns the old theme when called
-* It is good practice to use `old_theme <- theme_set(theme_minimal())` so that the original theme can be restored if needed
-
-Theme Components
-====================================
-
-* You can adjust individual components of a theme by adding a `theme()` layer
-* This function can take hundreds of parameters, each corresponding to a unique element of the plot
-* You can find a list by using `?theme`
-* For each parameter we pass in one of `element_blank()` (remove the element), `element_rect()`, `element_line()`, `element_text()`
-* We can then specify ways of theming the element in this function
-* You can look at the relevant help page for each element type to see a list of valid parameters
-* For example we can make the x-axis label red using `theme(axis.text.x = element_text(colour = 'red'))` as a new layer
-
-Summary
-====================================
-type: sub-section
-
-A Layered Grammar of Graphics
-====================================
-
-* We have covered a lot about `ggplot2` in the several session involving it
-* This foundation is powerful enough to produce essentially any type of plot you can imagine
-* We can summarise all we have learnt into the following template
-
-
-```r
-ggplot(data = <DATA>) + 
-  <GEOM_FUNCTION>(
-     mapping = aes(<MAPPINGS>),
-     stat = <STAT>, 
-     position = <POSITION>
-  ) +
-  <COORDINATE_FUNCTION> +
-  <FACET_FUNCTION> +
-  <THEME_FUNCTION>
-```
-
-* Note that the geom and theme functions can actually be multiple geoms and themes layered one on top of the other
-
-Going Further
-====================================
-
-* Although ggplot is an immensely powerful tool, it does have limitations
-* Thankfully, the ggplot ecosystem is entirely extensible
-* Here are a few extensions that may be of interest:
-  * `gganimate` - turn static `ggplot2` plots into animations using only a few lines of code
-  * `ggthemes` - more themes, more geometries, more scales
-  * `ggrepel` - repel overlapping text labels away from each other
-  * `geofacet` - create facets that map to real-life geography
-
-The DataViz Battle
-====================================
-type: sub-section
-
-Congratulations
-====================================
-
-* Well done for making it to the end of the structured portion of this course
-* It is now time to apply the skills you developed to produce a data visualisation of your choosing
-* We will not be running a session next week so you have time to work on this
-* We will then reconvene in two weeks time to showcase results
-
-Competition Rules
-====================================
-
-* Each student is allowed to enter as many visualisations as they would like
-* You are welcome to work together and help each other with problems but should not copy code directly
-* The visualisation you produce can be _inspired_ by existing visualisations/projects but direct plagiarism will not be tolerated (it is safest to comment your code with where you got certain ideas/code from)
-* You are welcome to ask me for any support during the competition. I will be able to guide you to helpful resources and/or fix errors in your code
-
-Prizes
-====================================
-
-* Anyone who participates in the competition will be rewarded with a tidyverse laptop sticker
-* There will be four main prizes each earning a box of chocolates:
-  * Most aesthetically-pleasing visualisation
-  * Visualisation showcasing the best techniques that go above and beyond this course
-  * Best story-telling/most informative
-  * Novel visualisation of the weather dataset
-* Each visualisation entered can only win one of these prizes but if you decide to enter all four categories with four different visualisations, you could potentially win them all
-
-Submitting Visualisations
-====================================
-
-* To submit a visualisation, please email a compressed archive (e.g. ZIP) to `tim.hargreaves@icloud.com`
-* This should contain the output of your visualisation (any file format welcome), the R Script that produced your visualisation, and any inputs your script requires (e.g. data sets)
-* This must be sent to be by 1pm on the 27th November to be considered for the main prizes
-* I will consider visualisations sent to me at any point for the participation prizes
-* By submitting your visualisation, you must agree to have its source code and output hosted on this course's GitHub repository (I am happy to help you clean up your code/visualisation before it is shared)
-
-Resources
-====================================
-
-* As stated in session one, there are many ways to access resources on the tidyverse
-* [Stack Overflow](https://stackoverflow.com/) is a great resource - avoid asking your own questions as almost every beginner question has already been asked
-* Simply web-searching your problem followed by one of 'R', 'Tidyverse', or the specific tidyverse package you are using will return you many helpful guides
-* The tidyverse has a [website](https://www.tidyverse.org/) with help guides, tutorials, and full documentation
-* You can also check out the [cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for each of the packages we're using, though these are quite in-depth
-* Best of luck!
