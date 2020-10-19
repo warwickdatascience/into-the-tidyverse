@@ -38,7 +38,7 @@ This repository contains slides, exercise sheets, and solution sheets for WDSS's
 
 For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/warwickdatascience/into-the-tidyverse/raw/master/Course%20Summary.pptx).
 
-The contents of the presentations are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so we don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
+The contents of the teaching sessions are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so we don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
 
 My main word of guidance is 'practice'. Practice, practice, practice. You can read through these slides as many times as your heart disires and it is likely most of it will soon be forgotten. Instead, scan through the presentations so you know what tools are available and where to find them and then get straight onto the exercise sheets. If you reach a hurdle, have a look back through the slides. Wash, rinse, repeat and soon you'll by a tidyverse star!
 
@@ -58,6 +58,8 @@ Below you can find links to the content for each session. Our material is all re
 Note, that when attempting to download data for a given session, your browser may attempt to open CSVs directly. If this is the case, either right-click and select 'save as' or use `ctrl-S` to save a local copy.
 
 ### Session One
+
+* [Video](https://www.youtube.com/watch?v=axTOsjiXf1U)
 
 * [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
 
