@@ -5,11 +5,6 @@ width: 1440
 height: 900
 css: presentation.css
 
-Acknowledgements
-====================================
-
-![DigitalOcean Logo](images/DO_badge.png)
-
 Accessing Resources
 ====================================
 
@@ -101,7 +96,7 @@ Course Agenda
 ====================================
 
 * The course will be ran weekly for five weeks
-* An optional session will be ran at the end to facilitate a DataViz Battle
+* This will be followed by a data visualisation competition
 * Each session will introduce new material and work through some examples
 * A homework sheet will then be distributed to apply the new techniques
   
@@ -121,7 +116,7 @@ What is R?
 * Known for being highly extensible
 * Completely free and open-source with a large, friendly community
 
-R is an incredibly powerful tool. It can be used for machine learning, statistical modelling, big data, and much more. It is also capable of producing websites, interactive notebooks, and presentations (such as this one!).
+R is an incredibly powerful tool. It can be used for machine learning, statistical modeling, big data, and much more. It is also capable of producing websites, interactive notebooks, and presentations (such as this one!).
 
 Setting Up R
 ====================================
