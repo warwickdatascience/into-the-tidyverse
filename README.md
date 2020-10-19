@@ -65,44 +65,6 @@ Note, that when attempting to download data for a given session, your browser ma
 
 * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
 
-### Session Two
-
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
-
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_two/data)
-
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
-
-### Session Three
-
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
-
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_three/data)
-
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_solutions.nb.html#/)
-
-### Session Four
-
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_presentation.html)
-
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_four/data)
-
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
-
-### Session Five
-
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
-
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
-
 
 ## Session Summaries
 
@@ -168,6 +130,8 @@ If you are self-teaching, feel free to reach out to Tim Hargreaves (the content 
 ## Contact
 
 This course was written and initially taught by [Tim Hargreaves](https://www.linkedin.com/in/tim-hargreaves/). 
+
+The current course directory is [Kasia Kobalczyk](https://www.linkedin.com/in/katarzyna-kobalczyk/). 
 
 For general enquires, reach out to hello@warwickdatascience.com.
 
