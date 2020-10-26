@@ -66,6 +66,21 @@ Note, that when attempting to download data for a given session, your browser ma
 * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
 
 
+### Session Two
+
+* [Video](https://youtu.be/j9ih_9A4eS4)
+
+* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
+
+* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_two/data)
+
+* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
+
+* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
+
+
+### How to complete the homework using R notebooks? - [Video](https://youtu.be/4AEf44rLjV0)
+
 ## Session Summaries
 
 ### Session 1
@@ -106,10 +121,6 @@ Note, that when attempting to download data for a given session, your browser ma
 * Positional adjustments
 * Coordinate systems
 * Theming
-
-## Additional Content
-
-On top of the base content shown above, the partipants of our fast track course (R1) will have the opportunity to learn some additional content. This will take the form of additional content added on the fly or specific requests from students. No notes will be made for this additional teaching though recordings will be made available at the end of the course containing these sections.
 
 ## Help
 
