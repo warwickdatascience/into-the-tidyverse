@@ -81,6 +81,8 @@ Note, that when attempting to download data for a given session, your browser ma
 
 ### Session Three
 
+* [Video](https://youtu.be/qaxuDRAXNAI)
+
 * [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
 
 * [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_three/data)
