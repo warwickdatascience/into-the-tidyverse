@@ -105,6 +105,17 @@ Note, that when attempting to download data for a given session, your browser ma
 * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
 
 
+### Session Five
+
+ * [Video](https://youtu.be/hB46g6fYsQg)
+
+ * [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
+
+ * [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
+
+ * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
+
+
 ### How to complete the homework using R notebooks? - [Video](https://youtu.be/4AEf44rLjV0)
 
 ## Session Summaries
