@@ -2,7 +2,7 @@
 
 _Session material and solutions for the Into the Tidyverse course taught by WDSS_
 
-Spotted a mistake, dead link, or have suggestions for improvements? Report these [here](https://github.com/warwickdatascience/into-the-tidyverse/issues/new)
+Spotted a mistake, dead link, or have suggestions for improvements? Report these [here](https://github.com/warwickdatasciencesociety/into-the-tidyverse/issues/new)
 
 Navigation:
 
@@ -34,7 +34,7 @@ This repository contains slides, exercise sheets, and solution sheets for WDSS's
 
 'Into the Tidyverse' does exactly what it says on the tin. This is an intensive 5-week course which aims to take someone from a coding-zero to tidyverse-hero in as little time as possible. Each session is composed of a rapid-fire presentation introducing different elements of the tidyverse as well as an exercise sheet to help consolidate the ideas presented in the slideshow.
 
-For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/warwickdatascience/into-the-tidyverse/raw/master/Course%20Summary.pptx).
+For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/warwickdatasciencesociety/into-the-tidyverse/raw/master/Course%20Summary.pptx).
 
 The contents of the teaching sessions are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so we don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
 
@@ -59,61 +59,61 @@ Note, that when attempting to download data for a given session, your browser ma
 
 * [Video](https://www.youtube.com/watch?v=axTOsjiXf1U)
 
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
+* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
 
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
+* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
 
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
+* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
 
 
 ### Session Two
 
 * [Video](https://youtu.be/j9ih_9A4eS4)
 
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
+* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
 
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_two/data)
+* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_two/data)
 
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
+* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
 
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
+* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
 
 
 ### Session Three
 
 * [Video](https://youtu.be/qaxuDRAXNAI)
 
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
+* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
 
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_three/data)
+* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_three/data)
 
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_exercises.nb.html#/)
+* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_exercises.nb.html#/)
 
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_three/session_three_solutions.nb.html#/)
+* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_solutions.nb.html#/)
 
 
 ### Session Four
 
 * [Video](https://youtu.be/_1vSZ1NMgNI)
 
-* [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_presentation.html)
+* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_presentation.html)
 
-* [Data](https://github.com/warwickdatascience/into-the-tidyverse/tree/master/resources/session_four/data)
+* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_four/data)
 
-* [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_exercises.nb.html#/)
+* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_exercises.nb.html#/)
 
-* [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
+* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
 
 
 ### Session Five
 
  * [Video](https://youtu.be/hB46g6fYsQg)
 
- * [Presentation](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
+ * [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
 
- * [Exercises](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
+ * [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
 
- * [Solutions](https://warwickdatascience.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
+ * [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
 
 
 ### How to complete the homework using R notebooks? - [Video](https://youtu.be/4AEf44rLjV0)
@@ -181,7 +181,7 @@ This course was written and initially taught by [Tim Hargreaves](https://www.lin
 
 The current course directory is [Kasia Kobalczyk](https://www.linkedin.com/in/katarzyna-kobalczyk/). 
 
-For general enquires, reach out to hello@warwickdatascience.com.
+For general enquires, reach out to hello@warwickdatasciencesociety.com.
 
 ### Socials
 
