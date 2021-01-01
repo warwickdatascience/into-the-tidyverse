@@ -116,10 +116,10 @@ ggplot(mpg) +
 ```{r eval = FALSE}
 ggplot(mpg) +
   geom_point(aes(x = displ, y = hwy)) +
-  facet_grid(~ class, nrow = 2)
+  facet_wrap(~ class, nrow = 2)
 ```
 
-What advantages of faceting instead of the colour aesthetic? What are the disadvantages? How might the balance change if you had a larger data set?
+What are the advantages of faceting instead of the colour aesthetic? What are the disadvantages? How might the balance change if you had a larger data set?
 
 5. Read `?facet_wrap`. What does `nrow` do? What does `ncol` do? What other options control the layout of the individual panels? Why doesn't `facet_grid()` have `nrow` and `ncol` parameters?
 6. When using `facet_grid()` you should usually put the variable with more unique levels in the columns. Why?
