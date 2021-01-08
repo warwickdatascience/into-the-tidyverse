@@ -63,7 +63,7 @@ FALSE & !FALSE | TRUE
 4. What is the carat of the highest priced diamond in the the `diamond` dataset? (A condition such as `price == max(price)` may be useful)
 5. For each year in the `mpg` dataset, which car has the smallest engine size? Question 4 may be helpful. Note that you can use `group_by()` before `filter()` to change the scope of any aggregate functions
 6. Select all flowers from the `iris` dataset where either the petal length is greater than 6.4 or the petal width is greater than 2.4 (there should be 7 of these)
-7. Which observations in the `Ozone` dataset are missing a reading for `Ozone`
+7. Which observations in the `airquality` dataset are missing a reading for `Ozone`
 
 ### Arrange
 
