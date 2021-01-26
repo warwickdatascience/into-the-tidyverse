@@ -1,165 +1,37 @@
-# Into the Tidyverse
+# Welcome to Into the Tidyverse
 
-_Session material and solutions for the Into the Tidyverse course taught by WDSS_
+If you are viewing this page on GitHub, you may want to switch to the [standalone website](https://education.wdss.io/into-the-tidyverse) for a better experience.
 
-Spotted a mistake, dead link, or have suggestions for improvements? Report these [here](https://github.com/warwickdatasciencesociety/into-the-tidyverse/issues/new)
+## On This Page
 
-Navigation:
+- [Getting Started](#getting-started)
+  - [About the Course](#about-the-course)
+  - [Setup Guide](#setup-guide)
+  - [Importing Datasets](#importing-datasets)
+  - [Issue Reporting](#issue-reporting)
+- [Accessing Resources](#accessing-resources)
+  - [Resource List](#resource-list)
+  - [Session Links](#session-links)
+  - [Further Reading](#further-readinng)
+- [Getting Help](#getting-help)
+  - [FAQs](#faqs)
+  - [Support Channels](#support-channels)
+  - [Contact](#contact)
 
-* [FAQs](#faqs)
-* [About This Repository](#about-this-repository)
-* [About the Course](#about-the-course)
-* [Getting Started](#about-the-course)
-* [Quick Access to Resources](#quick-access-to-resources)
-* [Session Summaries](#session-summaries)
-* [Additional Content](#additional-content)
-* [Help](#help)
-* [Contact](#contact)
+## Getting Started
 
-## FAQs
-
-### The Tidy-what?
-
-The tidyverse is a collection of tools for the programming language R used for working with data. It was designed from the ground up to have a clear and consistent design philosophy, making it as easy as possible to learn how to work with data. From data importing, to cleaning, and visualisation to modelling, the tidyverse has you covered. If you are looking for a way to step up from tools such as Excel, Tableau, and PowerBI with as little difficulty as possible, the tidyverse welcomes you.
-
-### What are the prerequisites for the course?
-
-Nothing but a passion to learn!
-
-## About This Repository
-
-This repository contains slides, exercise sheets, and solution sheets for WDSS's course, 'Into the Tidyverse'. The material is aimed at anyone new to R or even programming in general. The repository is designed to be completely self-contained, with any images and data used in the presentations or exercises included in each session's data folder. You can use the navigation links below to find relevant resources and below that, a few words of guidance can be found.
-
-## About the Course
+### About the Course
 
 'Into the Tidyverse' does exactly what it says on the tin. This is an intensive 5-week course which aims to take someone from a coding-zero to tidyverse-hero in as little time as possible. Each session is composed of a rapid-fire presentation introducing different elements of the tidyverse as well as an exercise sheet to help consolidate the ideas presented in the slideshow.
 
-For more information on the structure and contents of this course, please take a look at the following [introductory presentation](https://github.com/warwickdatasciencesociety/into-the-tidyverse/raw/master/Course%20Summary.pptx).
-
-The contents of the teaching sessions are designed to be dense so don't worry if everything seems a bit intimidating. It takes far too long to memorise the exact function calls and parameter names of a new programming language, and so we don't make any attempt to teach this. Instead, the goal of this course is to have a scan through the tidyverse landscape and point out some of the key landmarks. Since the contents of the presentations are so dense, they become a good reference guide. Then, all you need to do is remember where to find those landmarks and look up the specifics of what you are trying to do as you go. This is often how real junior programmers work and you shouldn't be ashamed of doing so too; in fact I'd argue that it is one of the best ways to learn.
-
-My main word of guidance is 'practice'. Practice, practice, practice. You can read through these slides as many times as your heart disires and it is likely most of it will soon be forgotten. Instead, scan through the presentations so you know what tools are available and where to find them and then get straight onto the exercise sheets. If you reach a hurdle, have a look back through the slides. Wash, rinse, repeat and soon you'll by a tidyverse star!
-
-## Getting Started
+### Setup Guide
 
 This course will use an editor called RStudio. You have two options:
 
 1. Download and install first [R](https://www.r-project.org/) and then [RStudio](https://rstudio.com/) on your local machine
 2. Sign up for [RStudio Cloud](https://rstudio.cloud/)
 
-I would advise the former if you have install rights on your computer. It is slightly more faffy to setup than the latter option but will be more stable in the long-run. If you have any trouble with this, [give me a shout](#general-help).
-
-## Quick Access to Resources
-
-Below you can find links to the content for each session. Our material is all ready to go and we will add links for each session at the beginning of the week.
-
-Note, that when attempting to download data for a given session, your browser may attempt to open CSVs directly. If this is the case, either right-click and select 'save as' or use `ctrl-S` to save a local copy.
-
-### Session One
-
-* [Video](https://www.youtube.com/watch?v=axTOsjiXf1U)
-
-* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
-
-* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
-
-
-### Session Two
-
-* [Video](https://youtu.be/j9ih_9A4eS4)
-
-* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_presentation.html)
-
-* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_two/data)
-
-* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_two/session_two_solutions.nb.html#/)
-
-
-### Session Three
-
-* [Video](https://youtu.be/qaxuDRAXNAI)
-
-* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_presentation.html)
-
-* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_three/data)
-
-* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_three/session_three_solutions.nb.html#/)
-
-
-### Session Four
-
-* [Video](https://youtu.be/_1vSZ1NMgNI)
-
-* [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_presentation.html)
-
-* [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_four/data)
-
-* [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_exercises.nb.html#/)
-
-* [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_four/session_four_solutions.nb.html#/)
-
-
-### Session Five
-
- * [Video](https://youtu.be/hB46g6fYsQg)
-
- * [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_presentation.html)
-
- * [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_exercises.nb.html#/)
-
- * [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_five/session_five_solutions.nb.html#/)
-
-
-### How to complete the homework using R notebooks? - [Video](https://youtu.be/4AEf44rLjV0)
-
-## Session Summaries
-
-### Session 1
-
-* Understanding R, RStudio, and the tidyverse
-* Basic scatter plots
-* Exploring datasets
-* Using aesthetics
-* Faceted plots
-
-### Session 2
-
-* Using R as a calculator
-* Objects and functions
-* Reading CSV files
-* Reading Excel, SAS, SPSS, and STATA files
-* Creating line plots
-
-### Session 3
-
-* Using R for statistics
-* Comparisons and Boolean operators
-* Manipulating datasets
-* Grouped dataframes
-* Piping
-
-### Session 4
-
-* Tidy data
-* Pivoting data
-* Uniting and separating columns
-* Relational data
-
-### Session 5
-
-* Saving plots and dataframes
-* Statistical transformations
-* Positional adjustments
-* Coordinate systems
-* Theming
-
-## Help
+I would advise the former if you have install rights on your computer. It is slightly more faffy to setup than the latter option but will be more stable in the long-run due to the strict usage limits of RStudio Cloud. If you have any trouble with this, [give me a shout](#getting-help).
 
 ### Importing Datasets
 
@@ -169,11 +41,56 @@ You can then import this into R by setting your working directory to either the 
 
 If you are use RStudio cloud, you will need to open the `Files` panel and select `upload` to add the file to your workspace.
 
-### General Help
+### Issue Reporting
+
+The WDSS team have put their heart and soul (and some hundreds of hours) into producing the material in this course. After devoting that much energy, we want the resources to as perfect as possible. For that reason, if you come across any issue (spelling/grammar mistake, incorrect code, confusing points), no matter how small, please report it [here](https://github.com/warwickdatasciencesociety/into-the-tidyverse/issues). It only takes a few moments and we'll massively appreciate it!
+
+## Accessing Resources
+
+### Resource List
+
+The content is the course is focused around two main streams, teaching sessions and homework sheets. The teaching sessions are designed to be rapid and dense, introducing a lot of new material in a short amount of time. These concepts are then consolidated through the homework sheets.
+
+#### Session Recordings
+
+The course content is found in five HTML presentations, one for each session, but there are recordings for every session of the tutor going through the slides. It is strongly advised to learn from these recordings as more information, context, and explanations are given than is provided in the slides alone.
+
+#### Homework Notebooks
+
+Every teaching session also has a homework notebook. These must be completed in their entirety for a participant to be eligable for a certificate of completion; in fact, completing the homework sheets is the _only_ requirement. Solutions for all questions are provided, but we will be looking out for plagarism so it is best not to copy answers.
+
+#### Additional Notes
+
+The occasional session includes a short recorded presentation offering additional notes. This content is not strictly necessary but is of great importance if you wish to use your R skills on practical projects in the future. 
+
+The additional notes for session one are required if you wish to aquire a certificate of course completion from WDSS.
+
+### Session Links
+
+Here you can find the resources for each session. Sessions will be added as the course progresses.
+
+* [Session One](session-one)
+
+### Further Reading
+
+On top of any support the WDSS can offer, there are many open-source resources for learning R and the tidyverse. Here are some of our favourites:
+
+* [R4DS](https://r4ds.had.co.nz/) (the book this course is based on)
+* [R Cheat Sheets](https://rstudio.com/resources/cheatsheets/)
+* [RStudio Essentials Series](https://rstudio.com/resources/webinars/)
+* [R Markdown Guide](https://bookdown.org/yihui/rmarkdown/)
+
+## Getting Help
+
+### FAQs
+
+You can find a list of answered FAQs [here](faqs).
+
+### Support Channels
 
 If you are taking this course through WDSS, your first port of call for any issues is your mentor. They will be able to handle the majority of issues and can elevate any particulary troublesome or important ones.
 
-If you are self-teaching, feel free to reach out to Tim Hargreaves (the content author) on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/).
+If you are self-teaching, feel free to reach out to Tim Hargreaves (the content author) on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/) or Janique Krasnowska (the current teacher) on [LinkedIn](https://www.linkedin.com/in/janique-krasnowska/)
 
 ## Contact
 
@@ -181,7 +98,7 @@ This course was written and initially taught by [Tim Hargreaves](https://www.lin
 
 The current course directory is [Kasia Kobalczyk](https://www.linkedin.com/in/katarzyna-kobalczyk/). 
 
-For general enquires, reach out to hello@warwickdatasciencesociety.com.
+For general enquires, reach out to education@wdss.io.
 
 ### Socials
 
