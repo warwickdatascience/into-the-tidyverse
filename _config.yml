@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Into the Tidyverse
 description: An introductory course in R taught by WDSS
+future: true
