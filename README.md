@@ -84,7 +84,7 @@ On top of any support the WDSS can offer, there are many open-source resources f
 
 ### FAQs
 
-You can find a list of answered FAQs [here](faqs).
+You can find a list of answered FAQs [here](faqs/).
 
 ### Support Channels
 
