@@ -14,12 +14,12 @@
 
 ## Session Resources
 
-- [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_presentation.html)
+- [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session-one/session_one_presentation.html)
 
 ## Session Homework
 
-- [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_exercises.nb.html#/)
-- [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session_one/session_one_solutions.nb.html#/)
+- [Exercises](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session-one/session_one_exercises.nb.html#/)
+- [Solutions](https://warwickdatasciencesociety.github.io/into-the-tidyverse/resources/session-one/session_one_solutions.nb.html#/)
 
 ## Additional Notes
 
