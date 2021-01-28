@@ -22,7 +22,7 @@ If you are viewing this page on GitHub, you may want to switch to the [standalon
 
 ### About the Course
 
-'Into the Tidyverse' does exactly what it says on the tin. This is an intensive 5-week course which aims to take someone from a coding-zero to tidyverse-hero in as little time as possible. Each session is composed of a rapid-fire presentation introducing different elements of the tidyverse as well as an exercise sheet to help consolidate the ideas presented in the slideshow.
+'Into the Tidyverse' does exactly what it says on the tin. This is an intensive 5-week course which aims to take someone from a coding-zero to tidyverse-hero in as little time as possible. Each session is composed of a rapid-fire presentation, introducing different elements of the tidyverse, as well as an exercise sheet to help consolidate the ideas presented in the slideshow.
 
 ### Setup Guide
 
@@ -69,6 +69,7 @@ The additional notes for session one are required if you wish to aquire a certif
 
 Here you can find the resources for each session. Sessions will be added as the course progresses.
 
+* [Bonus Session One](bonus-one)
 * [Session One](session-one)
 
 ### Further Reading
