@@ -69,7 +69,6 @@ The additional notes for session one are required if you wish to aquire a certif
 
 Here you can find the resources for each session. Sessions will be added as the course progresses.
 
-* [Bonus Session One](bonus-one)
 * [Session One](session-one)
 
 ### Further Reading
