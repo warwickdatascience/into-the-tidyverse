@@ -70,6 +70,7 @@ The additional notes for session one are required if you wish to aquire a certif
 Here you can find the resources for each session. Sessions will be added as the course progresses.
 
 * [Session One](session-one)
+* [Session Two](session-two)
 
 ### Further Reading
 
