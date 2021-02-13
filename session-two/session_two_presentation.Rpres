@@ -196,7 +196,6 @@ Where Are We?
 ====================================
 
 * Now that we have the basics of data visualisation under our belt, we can return to the beginning of the data science pipeline
-* In doing this, we are departing from the order that R4DS takes, although I think this is best so we can get our hands on the weather dataset
 
 ![Data Analysis Map - Import](images/data_analysis_map_import.png)
 
@@ -220,7 +219,7 @@ CSV files
 ====================================
 left: 50%
 
-* Common-separated value (CSV) files are almost certainly the most common storage format for flat data
+* Comma-separated value (CSV) files are almost certainly the most common storage format for flat data
 * Each observation occupies its own line and fields are separated by commas (hence the name)
 * CSVs can contain a header row with column names, although this is not always the case
 

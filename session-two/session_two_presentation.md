@@ -240,7 +240,6 @@ Where Are We?
 ====================================
 
 * Now that we have the basics of data visualisation under our belt, we can return to the beginning of the data science pipeline
-* In doing this, we are departing from the order that R4DS takes, although I think this is best so we can get our hands on the weather dataset
 
 ![Data Analysis Map - Import](images/data_analysis_map_import.png)
 
@@ -264,7 +263,7 @@ CSV files
 ====================================
 left: 50%
 
-* Common-separated value (CSV) files are almost certainly the most common storage format for flat data
+* Comma-separated value (CSV) files are almost certainly the most common storage format for flat data
 * Each observation occupies its own line and fields are separated by commas (hence the name)
 * CSVs can contain a header row with column names, although this is not always the case
 
@@ -292,7 +291,8 @@ people_df <- read_csv("data/people.csv")
 ```
 
 ```
-Parsed with column specification:
+
+── Column specification ────────────────────────────────────────────────────────
 cols(
   earn = col_double(),
   height = col_double(),
@@ -328,7 +328,7 @@ people_df
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# ... with 1,182 more rows
+# … with 1,182 more rows
 ```
 
 Aside: Tibbles
@@ -585,7 +585,8 @@ people <- read_fwf('data/people.txt',
 ```
 
 ```
-Parsed with column specification:
+
+── Column specification ────────────────────────────────────────────────────────
 cols(
   earn = col_double(),
   height = col_double(),
@@ -618,7 +619,7 @@ people
  8 32000   72.7 male      17    46 white   
  9  2000   72.0 male      15    21 hispanic
 10 27000   72.2 male      12    26 white   
-# ... with 1,182 more rows
+# … with 1,182 more rows
 ```
 
 * These can be read in alternative ways using `fwf_positions()`, `fwf_cols()`, and `fwf_empty()`
@@ -639,7 +640,8 @@ people <- read_table('data/people.txt',
 ```
 
 ```
-Parsed with column specification:
+
+── Column specification ────────────────────────────────────────────────────────
 cols(
   earn = col_double(),
   height = col_double(),

@@ -344,7 +344,7 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 Polar Coordinates
 ====================================
 
-* You can use `coord_polar()` to treat your x and y values as r and theta in polar coordinates
+* You can use `coord_polar()` to treat your x and y values as theta and r in polar coordinates
 
 
 ```r
