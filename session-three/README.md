@@ -15,7 +15,7 @@
 ## Session Resources
 
 - [Presentation](https://warwickdatasciencesociety.github.io/into-the-tidyverse/session-three/session_three_presentation.html)
-- [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/resources/session_three/data)
+- [Data](https://github.com/warwickdatasciencesociety/into-the-tidyverse/tree/master/session-three/data)
 
 ## Session Homework
 
