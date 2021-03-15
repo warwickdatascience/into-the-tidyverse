@@ -73,6 +73,7 @@ Here you can find the resources for each session. Sessions will be added as the 
 * [Session Two](session-two)
 * [Session Three](session-three)
 * [Session Four](session-four)
+* [Session Four](session-five)
 
 ### Further Reading
 
